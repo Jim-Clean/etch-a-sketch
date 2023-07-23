@@ -1,0 +1,10 @@
+#grid-container {
+    display: flex;
+    width: 256px;
+    flex-wrap: wrap;
+}
+
+#grid-container div {
+    width: 16px;
+    height: 16px;
+}
