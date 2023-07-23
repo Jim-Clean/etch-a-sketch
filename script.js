@@ -11,5 +11,13 @@ function addElement() {
 
 console.log(addElement());
 
-//create container for each line and enter 16 div boxes? Then flex so they
-//expand out horizontal on the page
+/*
+TODO:
+- Make grid color when mouse clicked and hovered over square so you can draw
+- Make button to choose colour from RGB picker
+- Make button to select rainbow mode
+- Make a rubber button to reverse any drawn items
+- Make button to clear screen
+- House screen in an etch a sketch frame
+- Add webpage title/styling to buttons ect.
+*/
