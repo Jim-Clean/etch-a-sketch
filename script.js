@@ -12,11 +12,10 @@ function addElement() {
 
     function touchHandler(e) {
     if (e.type == "mouseover" && e.which == 1) {
-        this.style.backgroundColor = rgb;
+        this.style.backgroundColor = document.getElementById("c").value; 
     }
     }
 }
-
 
 
 console.log(addElement());
