@@ -7,10 +7,4 @@
 #grid-container div {
     width: 30px;
     height: 30px;
-    transition: 0.7s;
-}
-
-#grid-container div:hover {
-    transition: 0.7s;
-    background-color: black;
 }
