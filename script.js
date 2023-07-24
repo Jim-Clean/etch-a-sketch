@@ -22,7 +22,6 @@ console.log(addElement());
 
 /*
 TODO:
-- Make button to choose colour from RGB picker
 - Make button to select rainbow mode
 - Make a rubber button to reverse any drawn items
 - Make button to clear screen
