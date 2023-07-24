@@ -15,6 +15,12 @@ function addElement() {
         this.style.backgroundColor = 'black';
     }
     }
+    const colorPicker = document.getElementById("rgb");
+    colorPicker.addEventListener("input", function() {
+        image.style.filter = `hue-rotate(${this.value}deg)`;
+      });
+
+
 }
 
 console.log(addElement());
