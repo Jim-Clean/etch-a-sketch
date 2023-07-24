@@ -15,13 +15,20 @@ function addElement() {
         this.style.backgroundColor = 'black';
     }
     }
-    const colorPicker = document.getElementById("rgb");
-    colorPicker.addEventListener("input", function() {
-        image.style.filter = `hue-rotate(${this.value}deg)`;
-      });
 
+    var colorCanvas = document.getElementById('color_canvas');
+    var ColorCtx = colorCanvas .getContext('2d');  // This create a 2D context for the canvas
 
+    // Create a Vertical Gradient(white to black)
+    let gradientV = ColorCtx .createLinearGradient(0, 0, 0, 300);
+    gradientV.addColorStop(0, 'rgba(0,0,0,0)');
+    gradientV.addColorStop(1, '#000');
+    ColorCtx .fillStyle = gradientV;
+    ColorCtx .fillRect(0, 0, ColorCtx .canvas.width, 
+    ColorCtx .canvas.height); 
 }
+
+
 
 console.log(addElement());
 
