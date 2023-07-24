@@ -17,7 +17,6 @@ function addElement() {
     }
 }
 
-
 console.log(addElement());
 
 /*
