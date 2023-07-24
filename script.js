@@ -6,8 +6,29 @@ function addElement() {
     const newDiv = document.createElement("div");
     const currentDiv = document.getElementById("grid-container");
     currentDiv.appendChild(newDiv);
+    //newDiv.addEventListener('mousedown', touchHandler, false);
+    newDiv.addEventListener('mouseover', touchHandler, false);
+    }
+
+    function touchHandler(e) {
+    if (e.type == "mouseover" && e.which == 1) {
+        this.style.backgroundColor = 'black';
+    }
     }
 }
+
+/*
+const divs = document.querySelectorAll('div');
+    // we use the .forEach method to iterate through each button
+    divs.forEach((div) => {
+
+  // and for each one we add a 'click' listener
+    divs.addEventListener('click', () => {
+        this.style.backgroundColor = 'black';
+    });
+});
+*/
+
 
 console.log(addElement());
 
