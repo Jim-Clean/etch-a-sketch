@@ -38,6 +38,13 @@ function clearScreen() {
     }
 }
 
+function logValue(val) {
+    document.getElementById("rangeValue").innerHTML = val+"x"+val;
+}
+//default value of range counter
+counter = document.getElementById("rangeValue");
+counter.innerHTML = '16x16';
+
 //default the color-picker radio option
 radiobutton = document.getElementById("color-picker");
 radiobutton.checked = true;
@@ -49,3 +56,5 @@ TODO:
 - House screen in an etch a sketch frame
 - Add webpage title/styling to buttons ect.
 */
+
+//<input id="amount" type="number" value="16" min="1" max="64" oninput="rangeInput.value=amount.value" />
