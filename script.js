@@ -15,8 +15,10 @@ function addElement() {
         if (e.type == "mousemove" && e.which == 1 && document.getElementById("rainbow").checked == true) {
             const randomColor = Math.floor(Math.random()*16777215).toString(16);
             this.style.backgroundColor = "#" + randomColor; 
-        } else if (e.type == "mousemove" && e.which == 1){
-            this.style.backgroundColor = document.getElementById("c").value;   
+        } else if (e.type == "mousemove" && e.which == 1 && document.getElementById("rubber").checked == true){
+            this.style.backgroundColor = 'white';   
+        } else if (e.type == "mousemove" && e.which == 1) {
+            this.style.backgroundColor = document.getElementById("c").value;
         }
     }    
     //normal color picker functioning
@@ -34,9 +36,9 @@ console.log(addElement());
 
 /*
 TODO:
-- Make button to select rainbow mode
-- Make a rubber button to reverse any drawn items
+- make buttons radio instead of checkbox
 - Make button to clear screen
+- Make slider to select the amount of pixels (divs in grid)
 - House screen in an etch a sketch frame
 - Add webpage title/styling to buttons ect.
 */
