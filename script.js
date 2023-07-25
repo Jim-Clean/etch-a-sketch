@@ -1,15 +1,22 @@
 //var x = document.getElementById("rangeValue").innerHTML
-slider = document.getElementById("rangeValue");
+slider = document.getElementById("rangeInput");
 slider.value = 16;
 
+
 function addElement() {
-    // create a new div element
-    //var x = 16
-    console.log(document.getElementById("rangeValue").value);
-    var x = document.getElementById("rangeValue").value
+    var x = document.getElementById("rangeInput").value;
+
+    for (i = 0; i < 1; i++) {
+        var paras = document.getElementsByClassName('grid');
+
+        while(paras[0]) {
+        paras[0].parentNode.removeChild(paras[0]);
+        }
+    }
 
     for (i = 0; i < (x*x); i++) {
-
+    // create a new div element
+        
     const newDiv = document.createElement("div");
     newDiv.className = 'grid';
     const currentDiv = document.getElementById("grid-container");
@@ -32,13 +39,9 @@ function addElement() {
 console.log(document.getElementById("rainbow").value)
 console.log(addElement());
 
-/*
-document.addEventListener("DOMContentLoaded", function () {
-    clearScreen();
-});
-*/
 
-function clearScreen(x) {
+function clearScreen() {
+    var x = document.getElementById("rangeValue").value
     for (i = 0; i < (x*x); i++) {
     const gridDiv = document.getElementsByClassName('grid');
     gridDiv[i].style.backgroundColor='white';
@@ -58,6 +61,7 @@ radiobutton = document.getElementById("color-picker");
 radiobutton.checked = true;
 /*
 TODO:
+- clear old dynamically created divs
 - Make slider to select the amount of pixels (divs in grid)
 - Improve pen by making it also paint on click
 - House screen in an etch a sketch frame
