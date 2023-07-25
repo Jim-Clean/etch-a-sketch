@@ -4,11 +4,12 @@ function addElement() {
     for (i = 0; i < 256; i++) {
 
     const newDiv = document.createElement("div");
+    newDiv.className = 'grid';
     const currentDiv = document.getElementById("grid-container");
     currentDiv.appendChild(newDiv);
     newDiv.addEventListener('mousemove', touchHandler, false);
     }
-
+    
     //radio selects color mode
     function touchHandler(e) {
         if (e.type == "mousemove" && e.which == 1 && document.getElementById("rainbow").checked == true) {
@@ -20,16 +21,27 @@ function addElement() {
             this.style.backgroundColor = document.getElementById("c").value;
         }
     }
-    function clearScreen() {
-        
-    }
 }
 console.log(document.getElementById("rainbow").value)
 console.log(addElement());
 
 /*
+document.addEventListener("DOMContentLoaded", function () {
+    clearScreen();
+});
+*/
+
+function clearScreen() {
+    for (i = 0; i < 256; i++) {
+    const gridDiv = document.getElementsByClassName('grid');
+    gridDiv[i].style.backgroundColor='white';
+    }
+}
+
+/*
 TODO:
 - Make button to clear screen
+- set color mode as default radio option
 - Make slider to select the amount of pixels (divs in grid)
 - House screen in an etch a sketch frame
 - Add webpage title/styling to buttons ect.
