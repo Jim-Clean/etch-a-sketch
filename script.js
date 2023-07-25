@@ -7,16 +7,17 @@ function addElement() {
     const currentDiv = document.getElementById("grid-container");
     currentDiv.appendChild(newDiv);
     //newDiv.addEventListener('mousedown', touchHandler, false);
-    newDiv.addEventListener('mouseover', touchHandler, false);
+    newDiv.addEventListener('mousemove', touchHandler, false);
     }
 
     function touchHandler(e) {
-    if (e.type == "mouseover" && e.which == 1) {
+    if (e.type == "mousemove" && e.which == 1) {
         this.style.backgroundColor = document.getElementById("c").value; 
     }
     }
 }
 
+//console.log(document.getElementById("rainbow").value)
 console.log(addElement());
 
 /*
