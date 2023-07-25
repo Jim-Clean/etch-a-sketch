@@ -14,7 +14,8 @@
     <input type="radio" id="rainbow" name="color-mode">
     <input type="radio" id="rubber" name="color-mode">
     <button onclick="clearScreen()"id="clear">Clear Canvas</button>
-    <input type="range" id="pixel-number" min="1" max="64" step="1">
+    <input id="rangeInput" type="range" min="1" max="64" oninput="amount.value=rangeInput.value" />
+    <input id="amount" type="number" value="16" min="1" max="64" oninput="rangeInput.value=amount.value" />
     <script src="script.js"></script>
 </body>
 </html>

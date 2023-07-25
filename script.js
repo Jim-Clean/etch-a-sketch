@@ -41,6 +41,7 @@ function clearScreen() {
 //default the color-picker radio option
 radiobutton = document.getElementById("color-picker");
 radiobutton.checked = true;
+
 /*
 TODO:
 - set color mode as default radio option
