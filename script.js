@@ -73,9 +73,11 @@ radiobutton = document.getElementById("color-picker");
 radiobutton.checked = true;
 /*
 TODO:
-- Improve pen by making it also paint on click
-- House screen in an etch a sketch frame
-- Add webpage title/styling to buttons ect.
+- Add webpage title
+- flex page layout
+- add radio option labels
+- style buttons and page
+- House screen in a retro etch a sketch frame
 */
 
 //<input id="amount" type="number" value="16" min="1" max="64" oninput="rangeInput.value=amount.value" />
