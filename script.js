@@ -38,9 +38,11 @@ function clearScreen() {
     }
 }
 
+//default the color-picker radio option
+radiobutton = document.getElementById("color-picker");
+radiobutton.checked = true;
 /*
 TODO:
-- Make button to clear screen
 - set color mode as default radio option
 - Make slider to select the amount of pixels (divs in grid)
 - House screen in an etch a sketch frame
