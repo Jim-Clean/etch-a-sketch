@@ -52,7 +52,7 @@ console.log(addElement());
 
 
 function clearScreen() {
-    var x = document.getElementById("rangeValue").value
+    var x = document.getElementById("rangeInput").value
     for (i = 0; i < (x*x); i++) {
     const gridDiv = document.getElementsByClassName('grid');
     gridDiv[i].style.backgroundColor='white';
