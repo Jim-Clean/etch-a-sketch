@@ -10,14 +10,26 @@ function addElement() {
     newDiv.addEventListener('mousemove', touchHandler, false);
     }
 
+    //rainbow color mode
+    function touchHandler(e) {
+        if (e.type == "mousemove" && e.which == 1 && document.getElementById("rainbow").checked == true) {
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            this.style.backgroundColor = "#" + randomColor; 
+        } else if (e.type == "mousemove" && e.which == 1){
+            this.style.backgroundColor = document.getElementById("c").value;   
+        }
+    }    
+    //normal color picker functioning
+    /*
     function touchHandler(e) {
     if (e.type == "mousemove" && e.which == 1) {
         this.style.backgroundColor = document.getElementById("c").value; 
     }
     }
+    */
 }
 
-//console.log(document.getElementById("rainbow").value)
+console.log(document.getElementById("rainbow").value)
 console.log(addElement());
 
 /*
