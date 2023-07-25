@@ -17,7 +17,7 @@ function addElement() {
             this.style.backgroundColor = "#" + randomColor; 
         } else if (e.type == "mousemove" && e.which == 1 && document.getElementById("rubber").checked == true){
             this.style.backgroundColor = 'white';   
-        } else if (e.type == "mousemove" && e.which == 1) {
+        } else if (e.type == "mousemove" && e.which == 1 && document.getElementById("color-picker").checked == true) {
             this.style.backgroundColor = document.getElementById("c").value;
         }
     }    
