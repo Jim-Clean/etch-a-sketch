@@ -6,6 +6,11 @@ slider.value = 16;
 function addElement() {
     var x = document.getElementById("rangeInput").value;
 
+    //var gridCSS = document.getElementsByClassName('grid')
+
+    //gridCSS.style.width = '30px';
+    //gridCSS.style.height = '30px';
+
     for (i = 0; i < 1; i++) {
         var paras = document.getElementsByClassName('grid');
 
@@ -24,6 +29,12 @@ function addElement() {
     newDiv.addEventListener('mousemove', touchHandler, false);
     }
     
+    for (i = 0; i < (x*x); i++) {
+        var gridCSS = document.getElementsByClassName('grid');
+        gridCSS[i].style.width=(480/x)+'px';
+        gridCSS[i].style.height=(480/x)+'px';
+    }
+
     //radio selects color mode
     function touchHandler(e) {
         if (e.type == "mousemove" && e.which == 1 && document.getElementById("rainbow").checked == true) {
