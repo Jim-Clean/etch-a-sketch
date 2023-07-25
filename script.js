@@ -1,7 +1,14 @@
+//var x = document.getElementById("rangeValue").innerHTML
+slider = document.getElementById("rangeValue");
+slider.value = 16;
+
 function addElement() {
     // create a new div element
+    //var x = 16
+    console.log(document.getElementById("rangeValue").value);
+    var x = document.getElementById("rangeValue").value
 
-    for (i = 0; i < 256; i++) {
+    for (i = 0; i < (x*x); i++) {
 
     const newDiv = document.createElement("div");
     newDiv.className = 'grid';
@@ -31,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 */
 
-function clearScreen() {
-    for (i = 0; i < 256; i++) {
+function clearScreen(x) {
+    for (i = 0; i < (x*x); i++) {
     const gridDiv = document.getElementsByClassName('grid');
     gridDiv[i].style.backgroundColor='white';
     }
@@ -41,6 +48,7 @@ function clearScreen() {
 function logValue(val) {
     document.getElementById("rangeValue").innerHTML = val+"x"+val;
 }
+
 //default value of range counter
 counter = document.getElementById("rangeValue");
 counter.innerHTML = '16x16';
@@ -48,11 +56,10 @@ counter.innerHTML = '16x16';
 //default the color-picker radio option
 radiobutton = document.getElementById("color-picker");
 radiobutton.checked = true;
-
 /*
 TODO:
-- set color mode as default radio option
 - Make slider to select the amount of pixels (divs in grid)
+- Improve pen by making it also paint on click
 - House screen in an etch a sketch frame
 - Add webpage title/styling to buttons ect.
 */
