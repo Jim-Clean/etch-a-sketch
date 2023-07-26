@@ -73,7 +73,7 @@ radiobutton = document.getElementById("color-picker");
 radiobutton.checked = true;
 /*
 TODO:
-- House screen in a retro etch a sketch frame
 - button hover states
 - add footer with link to github
+- make canvas larger
 */
