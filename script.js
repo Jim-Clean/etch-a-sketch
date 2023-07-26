@@ -32,8 +32,8 @@ function addElement() {
     
     for (i = 0; i < (x*x); i++) {
         var gridCSS = document.getElementsByClassName('grid');
-        gridCSS[i].style.width=(480/x)+'px';
-        gridCSS[i].style.height=(480/x)+'px';
+        gridCSS[i].style.width=(600/x)+'px';
+        gridCSS[i].style.height=(600/x)+'px';
     }
 
     //radio selects color mode
@@ -75,5 +75,4 @@ radiobutton.checked = true;
 TODO:
 - button hover states
 - add footer with link to github
-- make canvas larger
 */

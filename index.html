@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="header">
     <h1>Etch A Sketch</h1>
+</div>
     <div id="grid-container"></div>
     <div class="settings">
         <input type="color" id="c" tabindex=-1 class="color-picker">
@@ -19,12 +21,15 @@
         <input type="radio" id="rubber" name="color-mode">
         <label for="rubber">Rubber Mode</label>
     </div>
-    <div class="settings">
+    <div id="bottom" class="settings">
         <button onclick="clearScreen()"id="clear">Clear Canvas</button>
         <input id="rangeInput" type="range" min="1" max="64" oninput="logValue(this.value);addElement()" />
         <label for="rangeInput"id="rangeValue"></label>
         <script src="script.js"></script>
     </div>
+<div class="footer">
+    <p>Copyright Jim-Clean</p>
+</div>
 </body>
 </html>
 
