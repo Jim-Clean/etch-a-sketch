@@ -42,7 +42,7 @@ function addElement() {
             const randomColor = Math.floor(Math.random()*16777215).toString(16);
             this.style.backgroundColor = "#" + randomColor; 
         } else if ((e.type == "mousemove" || e.type == "mousedown") && e.which == 1 && document.getElementById("rubber").checked == true){
-            this.style.backgroundColor = 'white';   
+            this.style.backgroundColor = 'whitesmoke';   
         } else if ((e.type == "mousemove" || e.type == "mousedown") && e.which == 1 && document.getElementById("color-picker").checked == true) {
             this.style.backgroundColor = document.getElementById("c").value;
         }
