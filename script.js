@@ -74,6 +74,8 @@ radiobutton.checked = true;
 /*
 TODO:
 - House screen in a retro etch a sketch frame
+- button hover states
+- add footer with link to github
 */
 
 //<input id="amount" type="number" value="16" min="1" max="64" oninput="rangeInput.value=amount.value" />
