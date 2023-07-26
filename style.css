@@ -25,17 +25,28 @@ h1 {
 
 p {
     color: whitesmoke;
-    font-size: 12px;
+    font-size: 16px;
     margin: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #2d2d30;
     width: 100%;
     position:fixed;
     bottom:0;
+}
+
+#git {
+    width: 30px;
+    height: 100%;
+    background-color: transparent;
 }
 
 #grid-container {
@@ -151,3 +162,19 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: #007acc;
 }
+
+.mode {
+    transition: 0.4s;
+}
+
+.mode:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+#clear:active {
+    background-color: #007acc;
+    color: whitesmoke;
+    border-color: #1e1e1e;
+}
+
