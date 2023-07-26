@@ -74,7 +74,7 @@ input[type="radio"]:checked+label {
 }
 
 .settings {
-    padding-top: 20px;
+    margin-top: 26.8px;
     display: flex;
     justify-content: space-around;
     align-items: center;
