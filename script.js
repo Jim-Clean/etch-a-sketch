@@ -61,12 +61,12 @@ function clearScreen() {
 }
 
 function logValue(val) {
-    document.getElementById("rangeValue").innerHTML = val+"x"+val;
+    document.getElementById("rangeValue").innerHTML = "Size: "+val+"x"+val;
 }
 
 //default value of range counter
 counter = document.getElementById("rangeValue");
-counter.innerHTML = '16x16';
+counter.innerHTML = 'Size: 16x16';
 
 //default the color-picker radio option
 radiobutton = document.getElementById("color-picker");
