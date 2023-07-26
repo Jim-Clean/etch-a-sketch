@@ -73,10 +73,6 @@ radiobutton = document.getElementById("color-picker");
 radiobutton.checked = true;
 /*
 TODO:
-- Add webpage title
-- add radio option labels
-- flex page layout
-- style buttons and page
 - House screen in a retro etch a sketch frame
 */
 
